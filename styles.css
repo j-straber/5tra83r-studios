@@ -717,36 +717,106 @@ h1, h2, h3, h4 {
   margin-bottom: 18px;
 }
 
-/* Autopilot Mode Banner */
+/* Dedicated Autopilot Section */
 .autopilot-section {
-  padding: 30px 0 60px;
+  padding: 80px 0;
+  border-top: 1px solid var(--border-color);
+  background: radial-gradient(ellipse 70% 40% at 50% 100%, rgba(99, 102, 241, 0.08), transparent);
 }
 
-.autopilot-box {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(16, 185, 129, 0.08));
-  border: 1px solid rgba(99, 102, 241, 0.3);
+.autopilot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.autopilot-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 36px 40px;
+  padding: 32px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  flex-direction: column;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-.autopilot-code-bar {
+.autopilot-card:hover {
+  border-color: var(--border-glow);
+  transform: translateY(-3px);
+}
+
+.autopilot-card-header {
+  margin-bottom: 12px;
+}
+
+.autopilot-card-header h3 {
+  font-size: 1.35rem;
+  margin-top: 8px;
+}
+
+.autopilot-step-badge {
+  display: inline-block;
+  background: rgba(99, 102, 241, 0.2);
+  color: #a5b4fc;
+  border: 1px solid rgba(99, 102, 241, 0.4);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.725rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.autopilot-card p {
+  color: var(--text-secondary);
+  font-size: 0.925rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.autopilot-code-block {
   background-color: #060a12;
   border: 1px solid rgba(56, 189, 248, 0.3);
   border-radius: var(--radius-md);
-  padding: 14px 24px;
+  padding: 16px 20px;
   font-family: var(--font-mono);
   font-size: 1.05rem;
   color: #38bdf8;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 12px;
+  margin-bottom: 20px;
   box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.6);
-  white-space: nowrap;
+}
+
+.autopilot-card .code-panel {
+  margin-bottom: 20px;
+}
+
+.autopilot-card .code-panel pre {
+  font-size: 0.8rem;
+  line-height: 1.45;
+  padding: 14px;
+}
+
+.autopilot-card-checks {
+  list-style: none;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 16px;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+
+.autopilot-card-checks li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 /* Responsive */

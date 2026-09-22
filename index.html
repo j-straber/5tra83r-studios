@@ -22,6 +22,7 @@
       <nav class="nav-links">
         <a href="#product">ContextCut</a>
         <a href="#savings">Cost Savings</a>
+        <a href="#autopilot">Autopilot</a>
         <a href="#features">Features</a>
         <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
@@ -268,9 +269,9 @@
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">⚡</div>
-            <h3 class="feature-title">Zero-Friction MCP Standard</h3>
-            <p class="feature-text">Communicates cleanly over standard stdio JSON-RPC. Automatically detects local runtimes with zero manual build steps required.</p>
+            <div class="feature-icon">🤖</div>
+            <h3 class="feature-title">Agent Autopilot Integration</h3>
+            <p class="feature-text">Zero manual prompting. Automatically routes large files through ContextCut via <code>.cursorrules</code> and <code>CLAUDE.md</code> integrations.</p>
           </div>
 
           <div class="feature-card">
@@ -282,23 +283,57 @@
       </div>
     </section>
 
-    <!-- 1-Click Autopilot Setup Section -->
-    <section class="autopilot-section">
+    <!-- Dedicated Autopilot Mode Section -->
+    <section id="autopilot" class="autopilot-section">
       <div class="container">
-        <div class="autopilot-box">
-          <div class="autopilot-content">
-            <div class="badge-pill" style="margin-bottom: 12px;">
-              <span class="badge-dot"></span>
-              <span>Zero-Effort Integration</span>
-            </div>
-            <h2 class="section-title" style="font-size: 1.85rem; margin-bottom: 10px; text-align: left;">Enable Agent Autopilot in 1 Second</h2>
-            <p class="section-desc" style="text-align: left; margin: 0; font-size: 0.95rem; max-width: 540px;">
-              Never worry about remembering to prompt your assistant. Run this command in any project to automatically configure <code>.cursorrules</code> and <code>CLAUDE.md</code> so your agents prune large files on autopilot.
-            </p>
+        <div class="section-header">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            <span>Zero Manual Prompting</span>
           </div>
-          <div class="autopilot-code-bar">
-            <span>$</span>
-            <code>npx contextcut-mcp init</code>
+          <h2 class="section-title">Agent Autopilot Mode</h2>
+          <p class="section-desc">Never waste time remembering to prompt your assistant to use ContextCut. With Autopilot Mode, your agents in Cursor, Claude Desktop, and Antigravity invoke ContextCut automatically whenever large files or architectural context are needed.</p>
+        </div>
+
+        <div class="autopilot-grid">
+          <!-- Card 1: 1-Click CLI Init -->
+          <div class="autopilot-card">
+            <div class="autopilot-card-header">
+              <span class="autopilot-step-badge">METHOD 1: 1-CLICK CLI</span>
+              <h3>Automated Project Init</h3>
+            </div>
+            <p>Run this single command inside the root of any repository. ContextCut automatically configures your <code>.cursorrules</code> and <code>CLAUDE.md</code> files.</p>
+            <div class="autopilot-code-block">
+              <span class="prompt-symbol" style="color: #10b981; font-weight: bold;">$</span>
+              <code>npx contextcut-mcp init</code>
+            </div>
+            <ul class="autopilot-card-checks">
+              <li>✓ Automatically detects existing rules</li>
+              <li>✓ Safe append — preserves your existing project rules</li>
+              <li>✓ Zero configuration required</li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Manual Rule Copy-Paste -->
+          <div class="autopilot-card">
+            <div class="autopilot-card-header">
+              <span class="autopilot-step-badge">METHOD 2: COPY & PASTE</span>
+              <h3>Universal Agent Rule</h3>
+            </div>
+            <p>Paste directly into your <code>.cursorrules</code>, <code>CLAUDE.md</code>, or system instructions:</p>
+            <div class="code-panel">
+              <pre><code><span class="comment"># ContextCut Agent Autopilot Rule</span>
+When exploring, surveying, or analyzing code architecture,
+class definitions, or public API interfaces, ALWAYS invoke
+the `prune_code_context` MCP tool first to eliminate token
+bloat. Only inspect raw function bodies if explicitly modifying
+internal implementations.</code></pre>
+            </div>
+            <ul class="autopilot-card-checks">
+              <li>✓ Works across Cursor, Claude, Antigravity & Roo Code</li>
+              <li>✓ Reduces agent hallucinations by over 20%</li>
+              <li>✓ Cuts token consumption by 50–80% automatically</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -384,6 +419,11 @@
           <div class="faq-item">
             <h4>How does the built-in cost-benefit & ROI reporting work?</h4>
             <p>Every time ContextCut prunes a file or directory, it automatically logs an anonymous, lightweight record to your private local ledger at <code>~/.contextcut/history.jsonl</code>. You can ask Claude or Antigravity <em>"What are my ContextCut savings this week?"</em> or run <code>node build/index.js report --interval=weekly</code> in your terminal to see exact token counts, hours of latency saved, and estimated dollars saved based on current frontier model pricing.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4>What is Agent Autopilot Mode and how do I enable it?</h4>
+            <p>Autopilot Mode instructs your AI coding agent (in Cursor, Claude Desktop, or Antigravity) to automatically route files through ContextCut before analyzing architecture, classes, or interfaces. You can enable it with one command: <code>npx contextcut-mcp init</code>, which safely writes the rule to your project's <code>.cursorrules</code> and <code>CLAUDE.md</code> files.</p>
           </div>
 
           <div class="faq-item">

@@ -726,9 +726,9 @@ h1, h2, h3, h4 {
 
 .autopilot-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px;
-  max-width: 1040px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 

@@ -47,7 +47,7 @@
           Stop burning LLM tokens on <span class="gradient-text">code boilerplate</span>.
         </h1>
         <p class="hero-subtitle">
-          Slash AI coding bills by 50–80% and track cumulative dollar savings directly from your IDE or terminal. Local-first AST pruning for Claude Desktop, Cursor, and Antigravity.
+          Slash AI coding bills by 50–80% and <strong>prevent 5-hour ChatGPT & Claude rate-limit lockouts</strong>. 1-click setup for freelancers, remote engineers, and power knowledge workers.
         </p>
 
         <div class="hero-cta-group">
@@ -62,11 +62,12 @@
 
         <!-- Compatible With Banner -->
         <div class="compatibility-bar">
-          <span class="compat-label">Native MCP Support for:</span>
+          <span class="compat-label">Works Seamlessly With:</span>
           <span class="compat-tag">Claude Desktop</span>
           <span class="compat-tag">Cursor</span>
+          <span class="compat-tag">ChatGPT / Gemini (Web)</span>
           <span class="compat-tag">Google Antigravity</span>
-          <span class="compat-tag">Roo Code</span>
+          <span class="compat-tag">Windsurf</span>
         </div>
       </div>
     </section>
@@ -308,43 +309,57 @@
         </div>
 
         <div class="autopilot-grid">
-          <!-- Card 1: 1-Click CLI Init -->
+          <!-- Card 1: 1-Click Machine Setup -->
           <div class="autopilot-card">
             <div class="autopilot-card-header">
-              <span class="autopilot-step-badge">METHOD 1: 1-CLICK CLI</span>
-              <h3>Automated Project Init</h3>
+              <span class="autopilot-step-badge">1-CLICK APP SETUP</span>
+              <h3>Universal Machine Installer</h3>
             </div>
-            <p>Run this single command inside the root of any repository. ContextCut automatically configures your <code>.cursorrules</code> and <code>CLAUDE.md</code> files.</p>
+            <p>Automatically scans your machine, finds Claude Desktop, Cursor, Antigravity, and Windsurf, and configures the connection in seconds.</p>
+            <div class="autopilot-code-block">
+              <span class="prompt-symbol" style="color: #10b981; font-weight: bold;">$</span>
+              <code>npx contextcut-mcp install</code>
+            </div>
+            <ul class="autopilot-card-checks">
+              <li>✓ Auto-detects installed AI desktop apps</li>
+              <li>✓ Zero manual JSON config editing</li>
+              <li>✓ Safe backup of existing settings</li>
+            </ul>
+          </div>
+
+          <!-- Card 2: 1-Click Project Autopilot -->
+          <div class="autopilot-card">
+            <div class="autopilot-card-header">
+              <span class="autopilot-step-badge">AGENT AUTOPILOT</span>
+              <h3>Project-Level Init</h3>
+            </div>
+            <p>Run inside any repository. ContextCut automatically configures your <code>.cursorrules</code> and <code>CLAUDE.md</code> files so agents prune on autopilot.</p>
             <div class="autopilot-code-block">
               <span class="prompt-symbol" style="color: #10b981; font-weight: bold;">$</span>
               <code>npx contextcut-mcp init</code>
             </div>
             <ul class="autopilot-card-checks">
-              <li>✓ Automatically detects existing rules</li>
-              <li>✓ Safe append — preserves your existing project rules</li>
-              <li>✓ Zero configuration required</li>
+              <li>✓ Zero manual prompt instructions</li>
+              <li>✓ Safe append — preserves existing rules</li>
+              <li>✓ Slashes token waste by 50–80% automatically</li>
             </ul>
           </div>
 
-          <!-- Card 2: Manual Rule Copy-Paste -->
+          <!-- Card 3: Clipboard Trimmer for Web Chats -->
           <div class="autopilot-card">
             <div class="autopilot-card-header">
-              <span class="autopilot-step-badge">METHOD 2: COPY & PASTE</span>
-              <h3>Universal Agent Rule</h3>
+              <span class="autopilot-step-badge">WEB CHAT BATTERY SAVER</span>
+              <h3>Clipboard Quick-Trimmer</h3>
             </div>
-            <p>Paste directly into your <code>.cursorrules</code>, <code>CLAUDE.md</code>, or system instructions:</p>
-            <div class="code-panel">
-              <pre><code><span class="comment"># ContextCut Agent Autopilot Rule</span>
-When exploring, surveying, or analyzing code architecture,
-class definitions, or public API interfaces, ALWAYS invoke
-the `prune_code_context` MCP tool first to eliminate token
-bloat. Only inspect raw function bodies if explicitly modifying
-internal implementations.</code></pre>
+            <p>Copy bloated code, trim it via CLI or web, and paste lean stubs into ChatGPT or Gemini. <strong>Never hit the 5-hour rate limit!</strong></p>
+            <div class="autopilot-code-block">
+              <span class="prompt-symbol" style="color: #10b981; font-weight: bold;">$</span>
+              <code>npx contextcut-mcp clip</code>
             </div>
             <ul class="autopilot-card-checks">
-              <li>✓ Works across Cursor, Claude, Antigravity & Roo Code</li>
-              <li>✓ Reduces agent hallucinations by over 20%</li>
-              <li>✓ Cuts token consumption by 50–80% automatically</li>
+              <li>✓ Automatically trims clipboard (Cmd+C &rarr; Cmd+V)</li>
+              <li>✓ Or use in-browser: <a href="viewer/#trimmer" style="color: #38bdf8;">Web Context Trimmer &rarr;</a></li>
+              <li>✓ Prevents costly midday lockouts</li>
             </ul>
           </div>
         </div>
@@ -421,6 +436,11 @@ internal implementations.</code></pre>
           <div class="faq-item">
             <h4>What is the Model Context Protocol (MCP)?</h4>
             <p>MCP is an open standard developed by Anthropic that allows AI agents like Claude Desktop, Cursor, and Antigravity to securely connect to local tools and data sources on your computer.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4>How does ContextCut prevent the dreaded 5-hour ChatGPT / Claude lockout?</h4>
+            <p>Frontier models like Claude Pro and ChatGPT Plus don't just count the number of prompts you send; they strictly throttle you based on <strong>token consumption velocity</strong>. If you paste large code files or entire directories, your conversation burns 50k–100k tokens per question, locking you out after just 4–5 messages. ContextCut strips out internal function boilerplate and keeps only interfaces, shrinking your context by 50% to 80%. This keeps your token velocity low so your daily subscription lasts your entire workday.</p>
           </div>
 
           <div class="faq-item">

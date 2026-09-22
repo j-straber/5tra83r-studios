@@ -21,6 +21,7 @@
       </a>
       <nav class="nav-links">
         <a href="#product">ContextCut</a>
+        <a href="#savings">Cost Savings</a>
         <a href="#features">Features</a>
         <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
@@ -38,13 +39,13 @@
       <div class="container">
         <div class="badge-pill">
           <span class="badge-dot"></span>
-          <span>Introducing ContextCut v1.2 Polyglot Engine</span>
+          <span>New in v1.3: Real-Time & Cumulative Cost-Benefit Analytics</span>
         </div>
         <h1 class="hero-title">
           Stop burning LLM tokens on <span class="gradient-text">code boilerplate</span>.
         </h1>
         <p class="hero-subtitle">
-          5tra83r Studios builds local-first AST pruning middleware for AI coding assistants. Strip function bodies down to lightweight interface stubs while retaining 100% of types, signatures, and docstrings.
+          Slash AI coding bills by 50–80% and track cumulative dollar savings directly from your IDE or terminal. Local-first AST pruning for Claude Desktop, Cursor, and Antigravity.
         </p>
 
         <div class="hero-cta-group">
@@ -140,6 +141,99 @@
       </div>
     </section>
 
+    <!-- Persistent ROI & Cost-Benefit Analytics Section -->
+    <section id="savings" class="roi-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            <span>Measurable Financial Return</span>
+          </div>
+          <h2 class="section-title">Built-In Cost-Benefit Analytics & Local Ledger</h2>
+          <p class="section-desc">Never wonder how much money your developer tools are actually saving you. ContextCut logs every token reduction to a private local ledger and calculates your exact financial savings over time.</p>
+        </div>
+
+        <!-- Terminal Window Preview -->
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="terminal-dot close"></span>
+              <span class="terminal-dot min"></span>
+              <span class="terminal-dot max"></span>
+            </div>
+            <span class="terminal-title">bash — contextcut-mcp — 80x24</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-cmd">
+              <span class="prompt-symbol">$</span>
+              <span>npx contextcut-mcp report --interval=weekly</span>
+            </div>
+            <div class="terminal-output">
+              <p>## 📊 <span class="terminal-highlight-cyan">ContextCut Savings & ROI Report</span></p>
+              <p><strong>Reporting Interval</strong>: Past 7 Days (Weekly)</p>
+              <p><strong>Local Ledger Storage</strong>: <code>~/.contextcut/history.jsonl</code></p>
+              <br>
+              <p>### 💰 <span class="terminal-highlight-green">Bottom Line Financial Impact</span></p>
+              <p>• <strong>Total Cost Saved</strong>: <span class="terminal-highlight-green">$14.55 USD</span> (standard $3.00 / 1M input tokens)</p>
+              <p>• <strong>Total Tokens Saved</strong>: <span class="terminal-highlight-cyan">485,200 tokens</span> (74.2% overall reduction)</p>
+              <p>• <strong>LLM Latency Saved</strong>: ~11.4 minutes of context ingestion time</p>
+              <br>
+              <table class="terminal-table">
+                <thead>
+                  <tr>
+                    <th>Language</th>
+                    <th>Runs</th>
+                    <th>Files</th>
+                    <th>Tokens Saved</th>
+                    <th>Reduction</th>
+                    <th>Est. Cost Saved</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Python</strong></td>
+                    <td>98</td>
+                    <td>142</td>
+                    <td>285,200</td>
+                    <td>75.1%</td>
+                    <td class="terminal-highlight-green">$8.5500</td>
+                  </tr>
+                  <tr>
+                    <td><strong>TypeScript</strong></td>
+                    <td>44</td>
+                    <td>86</td>
+                    <td>200,000</td>
+                    <td>73.0%</td>
+                    <td class="terminal-highlight-green">$6.0000</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="color: #64748b; font-size: 0.8rem; margin-top: 12px;">🔒 ContextCut guarantees 100% privacy: only anonymous token counts and timestamps are stored locally.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Feature Highlight Boxes -->
+        <div class="roi-highlights-grid">
+          <div class="roi-highlight-item">
+            <div class="roi-highlight-icon">💰</div>
+            <h4 class="roi-highlight-title">Automated Dollar Tracking</h4>
+            <p class="roi-highlight-desc">Calculates live dollar savings based on Claude 3.5 Sonnet / GPT-4o input rates ($3.00/1M tokens) across every prompt.</p>
+          </div>
+          <div class="roi-highlight-item">
+            <div class="roi-highlight-icon">🔒</div>
+            <h4 class="roi-highlight-title">100% Private Local Ledger</h4>
+            <p class="roi-highlight-desc">Data lives in <code>~/.contextcut/history.jsonl</code>. Plaintext, auditable, and zero code or secrets ever leave your machine.</p>
+          </div>
+          <div class="roi-highlight-item">
+            <div class="roi-highlight-icon">⚡</div>
+            <h4 class="roi-highlight-title">Effortless Invocations</h4>
+            <p class="roi-highlight-desc">Ask Claude "What did ContextCut save me this week?" or run <code>contextcut report</code> directly in your terminal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Features Grid -->
     <section id="features" class="features-section">
       <div class="container">
@@ -163,8 +257,8 @@
 
           <div class="feature-card">
             <div class="feature-icon">📊</div>
-            <h3 class="feature-title">Live Telemetry & Cost Savings</h3>
-            <p class="feature-text">Every pruned file injects exact character counts, estimated token counts, and dollar savings based on current frontier model pricing.</p>
+            <h3 class="feature-title">Persistent Cost-Benefit Analytics</h3>
+            <p class="feature-text">Track cumulative token and dollar reductions across daily, weekly, or monthly intervals. Access reports natively inside Claude or directly from your terminal.</p>
           </div>
 
           <div class="feature-card">
@@ -212,6 +306,8 @@
               <li>✓ Single File & Recursive Directory Scans</li>
               <li>✓ Standard MCP Server (Claude & Cursor)</li>
               <li>✓ Per-call Token Telemetry</li>
+              <li>✓ Private Local Ledger (~/.contextcut/history.jsonl)</li>
+              <li>✓ Direct CLI Savings Reports (daily, weekly, monthly)</li>
               <li>✓ 100% Local & Open Source</li>
             </ul>
             <a href="https://github.com/j-straber/contextcut-mcp" target="_blank" class="btn btn-outline btn-block">Download on GitHub</a>
@@ -228,9 +324,11 @@
                 <span class="price-sub">One-Time Lifetime License</span>
               </div>
             </div>
+            <div class="roi-callout">⚡ Pays for itself in your first 1–2 weeks of active AI coding</div>
             <ul class="tier-features">
               <li>✓ <strong>Everything in Core, plus:</strong></li>
               <li>✓ <strong>Polyglot Pack: TypeScript, TSX, JS, JSX</strong></li>
+              <li>✓ <strong>Unified Polyglot Cost-Benefit Tracking</strong></li>
               <li>✓ 100% Comment & JSDoc Preservation</li>
               <li>✓ Use across up to 5 personal machines</li>
               <li>✓ Priority Updates & Lifetime Support</li>
@@ -259,6 +357,11 @@
           <div class="faq-item">
             <h4>How does ContextCut actually save money?</h4>
             <p>Frontier LLMs charge per input token. When your agent scans a 10,000-line codebase to understand its architecture, it ingests loops, regex, and internal logic that isn't needed. ContextCut stubs out internal function bodies while preserving signatures, cutting token bills by 50% to 80% on every prompt.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4>How does the built-in cost-benefit & ROI reporting work?</h4>
+            <p>Every time ContextCut prunes a file or directory, it automatically logs an anonymous, lightweight record to your private local ledger at <code>~/.contextcut/history.jsonl</code>. You can ask Claude or Antigravity <em>"What are my ContextCut savings this week?"</em> or run <code>node build/index.js report --interval=weekly</code> in your terminal to see exact token counts, hours of latency saved, and estimated dollars saved based on current frontier model pricing.</p>
           </div>
 
           <div class="faq-item">

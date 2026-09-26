@@ -61,6 +61,17 @@ Every product conceived and engineered by 5tra83r Studios must strictly adhere t
 
 ---
 
+### 2. Flagship Companion: ContextCut Mobile (iOS & Android)
+* **Target Audience**: Mobile developers, remote knowledge workers, executives on the go, ChatGPT/Claude mobile app subscribers.
+* **The High-Impact Problem**: Using ChatGPT or Claude mobile apps when reviewing code on GitHub/Slack or drafting snippets causes instant 5-hour lockouts due to mobile token consumption velocity.
+* **The 1-Click Solution**:
+  * Highlight code in any mobile app (Safari, Chrome, Slack, Notes) &rarr; tap **"Share to ContextCut"** in the native OS share sheet.
+  * ContextCut Mobile trims the code on-device in under 50ms, strips API keys & secrets via the 5tra83r Studios LLC. AI Safety Shield, copies the stub to the clipboard, and offers 1-tap deep links to **"Open ChatGPT"** or **"Open Claude"**.
+* **Architecture**: Cross-platform Flutter 3.47.5 (Dart 3.13.4) with pure Dart on-device AST pruners, local ROI ledger, and \$4.99 lifetime In-App Purchase.
+* **Status**: Complete test-driven implementation passing 100% of unit and widget tests (`contextcut-mobile`).
+
+---
+
 ### 2. Product Concept: RealEstateSnap (For Realtors & Brokers)
 * **The High-Impact Problem**: Realtors spend 10–15 hours every week reading 60-page home inspection reports, 120-page HOA covenants/bylaws, and complex title disclosures. Extracting key red flags to send to anxious home buyers is tedious, exhausting, and prone to human error.
 * **The 1-Click Solution**:
@@ -111,4 +122,4 @@ Every product conceived and engineered by 5tra83r Studios must strictly adhere t
 
 ---
 
-*Document Managed by 5tra83r Studios. Updated continuously as new customer pain points emerge.*
+*Document Managed by 5tra83r Studios LLC. Updated continuously as new customer pain points emerge.*
